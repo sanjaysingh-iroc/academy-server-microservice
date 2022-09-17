@@ -5,8 +5,8 @@ import org.springframework.cloud.loadbalancer.annotation.LoadBalancerClient;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@FeignClient(name="academyMicroservice")
-@LoadBalancerClient(name="academyMicroservice", configuration = LoadBalanceConfiguration.class)
+@FeignClient(name="academy-microservice")
+@LoadBalancerClient(name="academy-microservice", configuration = LoadBalanceConfiguration.class)
 public interface AcedemyProxy {
 
     @GetMapping(value = "/acedemy/getAcedemyDetails")
